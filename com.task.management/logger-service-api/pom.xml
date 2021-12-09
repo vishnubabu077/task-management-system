@@ -7,4 +7,14 @@
   </parent>
   <artifactId>logger-service-api</artifactId>
   <name>logger-service-api</name>
+  <dependencies>
+  <!-- Project modules -->
+		
+		<dependency>
+			<groupId>com.task.management</groupId>
+			<artifactId>logger-model</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		</dependencies>
 </project>
