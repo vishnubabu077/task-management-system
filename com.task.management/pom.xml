@@ -38,7 +38,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
 		</dependency>
 
 
@@ -51,6 +50,6 @@
 		<module>logger-repository</module>
 		<module>logger-service-api</module>
 		<module>logger-service-impl</module>
-		<module>swagger-config</module>
+		<module>integration-test</module>
 	</modules>
 </project>
