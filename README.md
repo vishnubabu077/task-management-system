@@ -1,5 +1,7 @@
 # task-management-system-backend
 
+The project is a Task Management sytem where a user can Add, Edit , update delete tasks. The main task will have sub tasks
+
 - This project is implemented on Java 15 and Spring boot framework (2.5.2)
 - H2 Database is used
 - Hibernate is used for DB Transactions
