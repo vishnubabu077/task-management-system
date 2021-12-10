@@ -41,5 +41,5 @@ The project is a Task Management sytem where a user can Add, Edit , update delet
 - Improve Validation 
 - Running the application in Cloud Environment 
 - Using flyway to version control DB
-- More Junits 
+- More Junits (Due to limited tim eonly few Unit test cases are written)
 - Combine Constants in a separate file 
