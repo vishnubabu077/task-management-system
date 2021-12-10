@@ -30,6 +30,7 @@ public class TaskServiceUtil {
 		taskModel.setDetails(taskEntity.getDetails());
 		taskModel.setTaskName(taskEntity.getTaskName());
 		taskModel.setCreateddate(parseDate(taskEntity.getCreateddate()));
+		taskModel.setUpdateddate(parseDate(taskEntity.getUpdateddate()));
 
 		if (null != taskEntity.getSubTasks()) {
 			taskEntity.getSubTasks().forEach(e -> {
@@ -141,6 +142,7 @@ public class TaskServiceUtil {
 		taskEntity.setTaskFinished(false);
 		taskEntity.setTaskGroup(taskModel.getTaskGroup());
 		taskEntity.setTaskName(taskModel.getTaskName());
+		
 		taskEntity.setTimeSpent(taskModel.getTimeSpent());
 		taskEntity.setCreateddate(new Date());
 		taskEntity.setDetails(taskModel.getDetails());
@@ -153,6 +155,8 @@ public class TaskServiceUtil {
 		return taskEntity;
 
 	}
+	
+	
 
 	public SubTaskEntity createSubTaskEntity(SubTaskModel subTaskModel) {
 

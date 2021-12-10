@@ -1,0 +1,122 @@
+{
+	"id": "a0de37d7-9d9f-050f-848f-43e5c1130974",
+	"name": "Task Management System",
+	"description": "",
+	"order": [
+		"3f800336-8714-7558-c183-7e2a1b00a449",
+		"2c8ae254-8a4a-347b-95d5-adca8ebd3094",
+		"77f7f0c2-bfcd-b4e6-5b86-272d714dc2c9",
+		"7287771e-5dea-23e6-d4fe-e5f0ae7aeba6"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1639063429603,
+	"owner": "8896042",
+	"public": false,
+	"requests": [
+		{
+			"id": "2c8ae254-8a4a-347b-95d5-adca8ebd3094",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/task/save",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1639125203156,
+			"name": "Create Task",
+			"description": "",
+			"collectionId": "a0de37d7-9d9f-050f-848f-43e5c1130974",
+			"responses": [],
+			"rawModeData": "\r\n    {\r\n        \"taskName\": \"Ui Updates\",\r\n        \"timeSpent\": 5,\r\n        \"taskGroup\": \"Development\",\r\n        \"taskAssignee\": \"Developer_2\",\r\n        \"subTasks\": [\r\n            {\r\n                \r\n                \"subTaskName\": \"Update Button Color\",\r\n                \"timeSpent\": 1\r\n            },\r\n            {\r\n              \r\n                \"subTaskName\": \"Update Banner\",\r\n                \"timeSpent\": 1\r\n            }\r\n        ],\r\n        \"updateddate\": null,\r\n        \"details\": \"test\"\r\n    }"
+		},
+		{
+			"id": "3f800336-8714-7558-c183-7e2a1b00a449",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/task/getAll",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1639125205436,
+			"name": "get All Task",
+			"description": "",
+			"collectionId": "a0de37d7-9d9f-050f-848f-43e5c1130974",
+			"responses": []
+		},
+		{
+			"id": "7287771e-5dea-23e6-d4fe-e5f0ae7aeba6",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/task/100",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1639125198564,
+			"name": "Delete Task",
+			"description": "",
+			"collectionId": "a0de37d7-9d9f-050f-848f-43e5c1130974",
+			"responses": []
+		},
+		{
+			"id": "77f7f0c2-bfcd-b4e6-5b86-272d714dc2c9",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/task/100",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1639125200794,
+			"name": "Update Task",
+			"description": "",
+			"collectionId": "a0de37d7-9d9f-050f-848f-43e5c1130974",
+			"responses": [],
+			"rawModeData": "\n    {\n        \"taskName\": \"Updated-Task\",\n        \"timeSpent\": 2,\n        \"taskGroup\": \"Upated-Group\",\n        \"taskAssignee\": \"UPdated-User\",\n        \"subTasks\": [\n           {\n                \"id\": 106,\n                \"subTaskName\": \"test2\",\n                \"timeSpent\": 1,\n                \"subTaskFinished\": true\n            },\n            {\n                \"id\": 107,\n                \"subTaskName\": \"test2\",\n                \"timeSpent\": 1,\n                \"subTaskFinished\": true\n            }\n        ],\n        \"details\": \"test\",\n        \"taskFinished\": true\n    }\n    "
+		}
+	]
+}

@@ -43,7 +43,7 @@ public class TaskLogController {
 	@DeleteMapping(path = "/{id}")
 	public ResponseEntity<String> deleteTask(@PathVariable(name = "id") Long id) {
 		taskService.deleteTask(id);
-		return new ResponseEntity<String>("Updated task details Successfully", HttpStatus.OK);
+		return new ResponseEntity<String>("Deleted task details Successfully", HttpStatus.OK);
 	}
 
 	@GetMapping(path = "/getAll")

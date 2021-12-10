@@ -25,9 +25,13 @@ CREATE SEQUENCE task_sequence
   INCREMENT BY 1
   MINVALUE 100;
   
-  INSERT INTO task VALUES (NEXT VALUE FOR task_sequence, 'test', 1,'test','admin',false,CURRENT_DATE,CURRENT_DATE,'test');
+  INSERT INTO task VALUES (NEXT VALUE FOR task_sequence, 'test1', 1,'test','admin',false,CURRENT_DATE,CURRENT_DATE,'test');
   INSERT INTO task VALUES (NEXT VALUE FOR task_sequence, 'test2', 1.4,'test','user',false,CURRENT_DATE,CURRENT_DATE,'test');
+   INSERT INTO task VALUES (NEXT VALUE FOR task_sequence, 'test3', 1,'test','admin',false,CURRENT_DATE,CURRENT_DATE,'test');
+    INSERT INTO task VALUES (NEXT VALUE FOR task_sequence, 'test4', 1,'test','admin',false,CURRENT_DATE,CURRENT_DATE,'test');
   
-  INSERT INTO sub_task VALUES (NEXT VALUE FOR task_sequence, 'test2',false,1,(SELECT id FROM task LIMIT 1));
+  INSERT INTO sub_task VALUES (NEXT VALUE FOR task_sequence, 'test2',false,1,(SELECT id FROM task where task_name='test2'));
+  INSERT INTO sub_task VALUES (NEXT VALUE FOR task_sequence, 'test3',false,1,(SELECT id FROM task where task_name='test2'));
+  INSERT INTO sub_task VALUES (NEXT VALUE FOR task_sequence, 'test2',false,1,(SELECT id FROM task where task_name='test1'));
   
 COMMIT;

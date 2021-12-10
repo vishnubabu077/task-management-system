@@ -50,6 +50,6 @@
 		<module>logger-repository</module>
 		<module>logger-service-api</module>
 		<module>logger-service-impl</module>
-		<module>integration-test</module>
+		<!-- <module>integration-test</module> -->
 	</modules>
 </project>

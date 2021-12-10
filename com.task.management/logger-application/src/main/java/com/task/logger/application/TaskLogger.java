@@ -27,7 +27,7 @@ public class TaskLogger {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/**").allowedOrigins("http://localhost:3000").allowedMethods("POST","PUT","GET","DELETE");
+				registry.addMapping("/**").allowedMethods("POST","PUT","GET","DELETE");
 			}
 		};
 	}

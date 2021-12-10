@@ -21,12 +21,12 @@ import org.springframework.web.context.WebApplicationContext;
 
 import com.task.logger.application.TaskLogger;
 
+
 @SpringBootTest(webEnvironment = WebEnvironment.MOCK, classes = { TaskLogger.class })
 @RunWith(SpringRunner.class)
-public class TaskLogControllerTest {
+public class TaskLogControllerIT {
 
-//	@Autowired
-//	private MockMvc mockMvc;
+
 
 	@Autowired
 	private WebApplicationContext webApplicationContext;
@@ -36,19 +36,12 @@ public class TaskLogControllerTest {
 	public void setUp() {
 		this.mockMvc = webAppContextSetup(webApplicationContext).build();
 	}
-
-	@Test
-	public void testGetTask() throws Exception {
-		mockMvc.perform(get("/task/getAll")).andDo(print()).andExpect(status().isOk())
-         .andExpect(jsonPath("$.[0].taskName").value("test")) 
-         .andExpect(jsonPath("$.[0]taskAssignee").value("admin"));
-				
-	}
 	
 	@Test
 	public void testAddTask() throws Exception {
 		JSONObject obj = new JSONObject();
 
+		obj.put("taskName", "test");
 		obj.put("taskName", "test");
 		obj.put("timeSpent", 1);
 		obj.put("taskGroup", "test");
@@ -60,6 +53,15 @@ public class TaskLogControllerTest {
 		           
 				
 	}
+
+	@Test
+	public void testGetTask() throws Exception {
+		mockMvc.perform(get("/task/getAll")).andDo(print()).andExpect(status().isOk())
+         .andExpect(jsonPath("$").isArray()) ;
+				
+	}
+	
+	
 	
 	
 
