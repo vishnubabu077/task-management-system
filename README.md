@@ -26,7 +26,7 @@
 # Application implementation 
 
 - User can Add, Edit , Update and Delete Tasks.
-- The validation that Main task can be closed only if subtasks are closed is implemented.
+- The validation that Main task can be deleted/updated to closed only if subtasks are closed is implemented.
 - All Exceptions are handled at a global exception handler
 - Basic Junit test cases are written and  will be run during mvn install/package 
 - Integration test is available (separate module) but has not been included in package due to an error (Need time to figure out ), but can be tested in eclipse
@@ -41,4 +41,4 @@
 - Running the application in Cloud Environment 
 - Using flyway to version control DB
 - More Junits 
-- Comine COnstants in a separate file 
+- Combine Constants in a separate file 
