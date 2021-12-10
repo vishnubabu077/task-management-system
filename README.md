@@ -22,7 +22,7 @@ The project is a Task Management sytem where a user can Add, Edit , update delet
 - The application will start up on port 8000
 - The application end points can be accessed by using the swagger end point : http://localhost:8080/swagger-ui/#/task-log-controller
 - by using the script data.sql some dummy data will already be created in the h2 DB.
-- Postman orchestration is placed in this repository
+- Postman orchestration is placed in this repository (Import - Task Management System.postman_collection.json in the repo)
 
 # Application implementation 
 
