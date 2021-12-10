@@ -14,7 +14,11 @@ import org.springframework.stereotype.Service;
 import com.task.logger.entity.TaskEntity;
 import com.task.logger.model.TaskModel;
 import com.task.logger.task.exception.CustomException;
-
+/**
+ * The service class for Database operations
+ * @author Vishnu
+ *
+ */
 @Service
 @Transactional
 public class TaskServiceImpl implements TaskService {

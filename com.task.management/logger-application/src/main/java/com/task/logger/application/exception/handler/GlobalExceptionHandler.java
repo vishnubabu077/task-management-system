@@ -10,7 +10,11 @@ import com.task.logger.error.model.TaskCustomError;
 import com.task.logger.task.exception.CustomException;
 
 import lombok.extern.log4j.Log4j2;
-
+/**
+ * The class for Global Exception Handler
+ * @author Vishnu
+ *
+ */
 @RestControllerAdvice
 @Log4j2
 public class GlobalExceptionHandler  extends ResponseEntityExceptionHandler {

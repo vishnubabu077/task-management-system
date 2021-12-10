@@ -21,6 +21,12 @@ import com.task.logger.model.TaskModel;
 import com.task.logger.task.TaskService;
 import com.task.logger.task.TaskServiceImpl;
 
+/**
+ * Controller class for Task logger
+ * 
+ * @author Vishnu
+ *
+ */
 @RestController
 @RequestMapping("/task")
 public class TaskLogController {

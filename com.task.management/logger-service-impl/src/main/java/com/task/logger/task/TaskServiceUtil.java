@@ -15,6 +15,12 @@ import com.task.logger.model.SubTaskModel;
 import com.task.logger.model.TaskModel;
 import com.task.logger.task.exception.CustomException;
 
+/**
+ * Util class for service
+ * 
+ * @author Vishnu
+ *
+ */
 @Service
 public class TaskServiceUtil {
 
@@ -77,6 +83,11 @@ public class TaskServiceUtil {
 
 	}
 
+	/**
+	 * Validate whether any subtask are pending before completing main task
+	 * 
+	 * @param taskEntity
+	 */
 	public void validateSubTasksForUpdate(TaskEntity taskEntity) {
 
 		taskEntity.getSubTasks().forEach(subTask -> {
@@ -88,6 +99,11 @@ public class TaskServiceUtil {
 
 	}
 
+	/**
+	 * Validate whether any subtask are pending before deleting the task
+	 * 
+	 * @param taskEntity
+	 */
 	public void validateSubTasksForDelete(TaskEntity taskEntity) {
 
 		taskEntity.getSubTasks().forEach(subTask -> {
@@ -142,7 +158,7 @@ public class TaskServiceUtil {
 		taskEntity.setTaskFinished(false);
 		taskEntity.setTaskGroup(taskModel.getTaskGroup());
 		taskEntity.setTaskName(taskModel.getTaskName());
-		
+
 		taskEntity.setTimeSpent(taskModel.getTimeSpent());
 		taskEntity.setCreateddate(new Date());
 		taskEntity.setDetails(taskModel.getDetails());
@@ -155,8 +171,6 @@ public class TaskServiceUtil {
 		return taskEntity;
 
 	}
-	
-	
 
 	public SubTaskEntity createSubTaskEntity(SubTaskModel subTaskModel) {
 
