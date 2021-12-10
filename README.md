@@ -15,8 +15,8 @@ The project is a Task Management sytem where a user can Add, Edit , update delet
 
 - Checkout the project from Git
 - Go into the root folder  : task-management-system\com.task.management
-- run command : mvn clean install
-- by doing the above command , all the sub modules will be packaged and will be available at the folder : task-management-system\com.task.management\logger-application\target
+- run command : mvn clean install 
+- by doing the above command , all the sub modules will be packaged,test cases will be run  and will be available at the folder : task-management-system\com.task.management\logger-application\target
 - The packaged file name would be logger-application-0.0.1-SNAPSHOT.jar
 - run the jar using command : java -jar logger-application-0.0.1-SNAPSHOT.jar
 - The application will start up on port 8000
